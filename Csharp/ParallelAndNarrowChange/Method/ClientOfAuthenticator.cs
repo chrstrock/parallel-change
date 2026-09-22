@@ -11,8 +11,8 @@ public class ClientOfAuthenticator(AuthenticationService authenticationService)
         new ClientOfAuthenticator(new AuthenticationService()).Run();
     }
 
-    public void Run() {
-        bool authenticated = authenticationService.IsAuthenticated(33);
+    private void Run() {
+        var authenticated = authenticationService.IsAuthenticated(33);
         Console.WriteLine("33 is authenticated = " + authenticated);
     }
 }
